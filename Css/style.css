@@ -1,0 +1,63 @@
+.body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #3b6152;
+    color: white;
+}
+.titulo {
+    text-align: left;
+    font-size: 2rem;
+    margin-top: 2rem;
+    color: azure;
+}
+.navigation {
+    display: flex;/*establecer un contenedor flexible*/
+    gap: 3rem;/*espaciado entre elementos*/
+    list-style: none;  /*eliminar viñetas de la lista*/
+    justify-content: flex-end;/*alineación de los elementos*/
+    margin: 3rem;/*espaciado externo*/
+    text-align: center;/*alineación del texto*/
+    
+}
+a {
+    text-decoration: none;
+    color:azure;
+}
+.navigation li {
+    font-size: 1rem;/* tamaño de fuente */
+    width: 100px;/*ancho del elemento*/
+    text-align: center;/*alineación del texto*/
+    padding: 0.5rem;/*espaciado interno*/
+    border-radius: 0.5rem;/*bordes redondeados*/
+    background-color:gray;/*color de fondo*/
+    box-shadow: 0 0 0.5rem black;/*sombra del elemento*/
+}
+.sobremi{
+    display: flex;
+    justify-content: center;
+}
+.container-sobremi{
+    display: flex;
+    width: 50%; /*ancho del contenedor*/
+    padding: 2rem; /*espaciado interno*/
+    margin-top: 5rem; /*espaciado externo*/
+    line-height: 2.5rem; /*altura de línea*/
+    font-size: large; /* tamaño de fuente */
+    color:azure; /*color del texto*/
+}    
+@media (max-width:767px) {
+    .titulo {
+        justify-content: center;
+    }
+    .navigation {
+        flex-direction: column; /*cambiar la dirección de los elementos a columna*/
+        gap: 1rem; /*espaciado entre elementos*/
+        align-items: center; /*alinear los elementos al centro*/
+    }
+    .container-sobremi {
+        width: 100%; /*ancho del contenedor*/
+        padding: 1; /*espaciado interno*/
+        margin-top: 1rem; /*espaciado externo*/
+        line-height: 2.5rem; /*altura de línea*/
+        font-size: small; /* tamaño de fuente */
+    }
+}
