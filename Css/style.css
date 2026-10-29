@@ -1,7 +1,15 @@
+:root {
+    --body-bg-color: #3b6152;
+    --text-color: white;
+    --colorh1: azure;
+}
 .body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: #3b6152;
     color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--colorh1)
 }
 .titulo {
     text-align: left;
@@ -43,8 +51,32 @@ a {
     line-height: 2.5rem; /*altura de línea*/
     font-size: large; /* tamaño de fuente */
     color:azure; /*color del texto*/
+    gap: 5rem; /*espaciado entre elementos*/
+    align-items: center; /*alinear los elementos al centro*/
 }    
-@media (max-width:767px) {
+.img-perfil {
+    border-radius: 50%; /*bordes redondeados*/
+}
+
+.experiencia, .estudios{
+    display: flex;
+    justify-content: center;
+    padding: 2rem; /*espaciado interno*/
+    color:azure; /*color del texto*/
+    
+}
+.container-experiencia, .container-estudios {
+    width: 50%; /*ancho del contenedor*/
+    padding: 2rem; /*espaciado interno*/
+    margin-top: 5rem; /*espaciado externo*/
+    line-height: 2.5rem; /*altura de línea*/
+    font-size: large; /* tamaño de fuente */
+    margin: 8rem; /*espaciado externo*/
+      
+}
+
+
+@media (max-width: 767px) {
     .titulo {
         justify-content: center;
     }
@@ -59,5 +91,50 @@ a {
         margin-top: 1rem; /*espaciado externo*/
         line-height: 2.5rem; /*altura de línea*/
         font-size: small; /* tamaño de fuente */
+        flex-direction: column; /*cambiar la dirección de los elementos a columna*/
     }
+    .container-estudios, .container-experiencia {
+        width: 100%; /*ancho del contenedor*/
+        padding: 1; /*espaciado interno*/
+        margin-top: 1rem; /*espaciado externo*/
+        line-height: 2.5rem; /*altura de línea*/
+        font-size: small; /* tamaño de fuente */
+        flex-direction: column;
+    }
+    .experiencia, .estudios{
+        width: 100%; /*ancho del contenedor*/
+        padding: 1rem; /*espaciado interno*/
+        margin-top: 1rem; /*espaciado externo*/
+        font-size: small; /* tamaño de fuente */
+    }
+}
+
+/* Tableta (pantallas medianas, entre 768px y 1023px)*/
+@media (max-width:768px)and (min-width: 1023px) {
+    .titulo {
+        justify-content: center;
+    }
+
+    .navigation {
+        flex-direction: column; /*cambiar la dirección de los elementos a columna*/
+        gap: 1rem; /*espaciado entre elementos*/
+        align-items: center; /*alinear los elementos al centro*/
+    }
+
+    .experiencia, .estudios{
+        width: 75%; /*ancho del contenedor*/
+    }
+}    
+@media (max-width: 1024px) {
+    .titulo {
+        justify-content: center;
+    }
+    .navigation {
+        flex-direction: column; /*cambiar la dirección de los elementos a columna*/
+        gap: 1rem; /*espaciado entre elementos*/
+        align-items: center; /*alinear los elementos al centro*/
+    }
+    .experiencia, .estudios{
+        width: 75%; /*ancho del contenedor*/
+    }   
 }
