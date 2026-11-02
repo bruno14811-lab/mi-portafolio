@@ -1,15 +1,16 @@
 :root {
-    --body-bg-color: #3b6152;
+    --body-bg-color: hsl(212, 81%, 60%);
     --text-color: white;
     --colorh1: azure;
-    --fondo-proyecto: #3b6152;
+    --fondo-proyecto: hsl(212, 81%, 60%);
+    --fondo-contacto: hsl(212, 81%, 60%);
 }
 .body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #3b6152;
+    background-color: hsl(212, 81%, 60%);
     color: white;
 }
-h1, h2, h3 {
+h1, h2 {
     color: var(--colorh1)
 }
 .titulo {

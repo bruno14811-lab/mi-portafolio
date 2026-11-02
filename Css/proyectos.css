@@ -12,7 +12,7 @@
 }
 /* como es el contenedor del proyecto en general*/
 .proyecto{
-    background-color: #3b6152;
+    background-color: var(--fondo-proyecto);
     border: 1px solid #ddd;
     border-radius: 5px;
     padding: 15px;
@@ -41,7 +41,7 @@
     display: inline-block;
     margin-top: 10px;
     padding: 8px 12px;
-    background-color: #3b6152;
+    background-color: #677570;
     color: azure;
     border-radius: 5px;
 }
